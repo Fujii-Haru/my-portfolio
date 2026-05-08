@@ -1,0 +1,90 @@
+/* デザイン：白背景・ミニマル */
+body {
+  margin: 0;
+  padding: 0;
+  font-family:
+    "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    Meiryo, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  font-weight: normal;
+}
+
+/* グリッドレイアウト */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.work-item {
+  background-color: #fff;
+  transition: opacity 0.3s;
+}
+
+/* ホバーした時に少し薄くする演出（お好みで） */
+.work-item:hover {
+  opacity: 0.7;
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #f0f0f0; /* 画像に薄い枠線 */
+}
+
+.work-info {
+  padding: 15px 0;
+}
+
+.work-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.work-category {
+  font-size: 0.75rem;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.work-link {
+  font-size: 0.85rem;
+  color: #000;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 0.8rem;
+  color: #ccc;
+}
